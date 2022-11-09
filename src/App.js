@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import './css/style.css';
+import Sidebar from './Components/Sidebar/Sidebar';
 import Header from './Components/Header/Header';
 import About from './Components/About/About';
 import Portfolio from './Components/Portfolio/Portfolio';
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-
+        <Sidebar />
         <Header />
         <About />
         <Portfolio />
