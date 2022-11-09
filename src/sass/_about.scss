@@ -1,4 +1,37 @@
-.about{
-    background-color: blue;
-    grid-column: sidebar-end/ col-end 4;
+.about {
+    background-color: whitesmoke;
+    grid-column: full-start/ col-end 4;
+
+    // margin: 12rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.feature {
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content;
+    row-gap: 1.5rem;
+    column-gap: 2.5rem;
+
+    &__heading{
+        font-size: 1.9rem;
+    }
+
+    &__icon {
+        fill: rgb(74, 72, 72);
+        width: 3.5rem;
+        height: 3.5rem;
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+
+    }
+
+    &__text {
+        font-size: 1.2rem;
+    }
 }
