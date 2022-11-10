@@ -1,6 +1,33 @@
 .certifications{
 
-    background-color: green;
+    background-color: #081013;
     grid-column: col-end 4 / center-end;
     grid-row: 2/ 2;
+    color: whitesmoke;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 2rem;
+
+    &__item{
+        &--1{
+            transform: translateX(-1.75rem);
+            justify-self: center;
+            
+        }
+    }
+
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+}
+
+.gal{
+    height: 12rem;
+    
 }
