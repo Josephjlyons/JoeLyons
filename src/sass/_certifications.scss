@@ -11,11 +11,20 @@
     padding: 2rem;
 
     &__item{
+
+        &:hover{
+            transform: scale(2);
+        }
         &--1{
             transform: translateX(-1.75rem);
             justify-self: center;
             
+            &:hover{
+                transform: scale(2);
+            }
         }
+
+     
     }
 
     &__text{
