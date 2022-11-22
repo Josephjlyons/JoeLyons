@@ -1,7 +1,9 @@
+@import './base';
+
 .footer{
-    background-color: black;
+    background-color: $color-primary-dark;
     color: white;
-    grid-column: full-start/ full-end;
+    grid-column: full-start/ center-end;
 
     .nav {
         list-style: none;
