@@ -1,5 +1,8 @@
+@import './base';
+
 .contact{
-    background-color: yellow;
-    grid-column: col-end 4 / -1;
-    grid-row: 2 / 2
+    background-color:$color-primary-dark;
+    grid-column: full-start / center-start;
+    grid-row: 2/ 2;
+    color: white;
 }
