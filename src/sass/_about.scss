@@ -1,7 +1,7 @@
 @import './base';
 
 .about {
-    background-color: #081013;
+    background-color: $color-primary-dark;
     grid-column: center-start 1/ col-end 4;
     color: white;
 

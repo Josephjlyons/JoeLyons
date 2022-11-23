@@ -43,6 +43,7 @@
         grid-row: 2/2;
         font-size: 8rem;
         letter-spacing: 5px;
+ 
 
     }
 
@@ -84,11 +85,15 @@
     }
 
     &__icons{
-        // display: flex;
+
         color: white;
         font-size: 5rem;
         padding: 2rem;
         justify-content: center;
+
+        &:hover{
+            transform: translateY(-.2rem);
+        }
         
     }
 
