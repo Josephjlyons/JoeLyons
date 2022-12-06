@@ -13,28 +13,68 @@
 
     &__item {
 
-        z-index: 1;
-        border-radius: 50%;
-
         &--1 {
+            background-image: url('../img/yelpCamp.webp');
+            background-size: cover;
+            background-position: center;
             grid-column: 2/4;
             grid-row: 1/5;
+
+            &:hover {
+                transform: translateY(-.75rem);
+                background-image:linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)),url('../img/yelpCamp.webp');
+            }
         }
 
         &--2 {
+            background-image: url('../img/draught-picker.webp');
+            background-size: cover;
+            background-position: center;
             grid-column: 4/6;
             grid-row: 1/5;
+
+            &:hover {
+                transform: translateY(-.75rem);
+                background-image:linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)),url('../img//draught-picker.webp');
+            }
         }
 
         &--3 {
+            background-image: url('../img/dnd-homepage.webp');
+            background-size: cover;
+            background-position: center;
             grid-column: 6/8;
             grid-row: 1/5;
+            &:hover {
+                transform: translateY(-.75rem);
+                background-image:linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)),url('../img/dnd-homepage.webp');
+            }
+        }
+
+        &--hidden {
+            color: white;
+            font-size: 10rem;
+            visibility: hidden;
         }
 
         &:hover {
+            
+
             transform: translateY(-.75rem);
-            // opacity: .3;
+            
+            
         }
+
+        &:hover &--hidden {
+            visibility: visible;
+      
+
+        }
+
+
+
+
+
     }
 
     &__header {
@@ -60,19 +100,11 @@
             text-align: center;
             color: white;
             font-size: 2rem;
+
         }
 
 
     }
 
-    .worksImg {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        display: block;
-        border-radius: 4px;
-
-
-    }
 
 }
