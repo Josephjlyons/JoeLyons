@@ -23,7 +23,7 @@
             &:hover {
                 transition: .2s;
                 transform: translateY(-.75rem);
-                background-image:linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)),url('../img/yelpCamp.webp');
+                background-image: linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)), url('../img/yelpCamp.webp');
             }
         }
 
@@ -37,7 +37,7 @@
             &:hover {
                 transition: .2s;
                 transform: translateY(-.75rem);
-                background-image:linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)),url('../img//draught-picker.webp');
+                background-image: linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)), url('../img//draught-picker.webp');
             }
         }
 
@@ -47,10 +47,11 @@
             background-position: center;
             grid-column: 6/8;
             grid-row: 1/5;
+
             &:hover {
                 transition: .2s;
-                transform: translateY(-.75rem);
-                background-image:linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)),url('../img/dnd-homepage.webp');
+                transform: translateY(-.5rem);
+                background-image: linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1)), url('../img/dnd-homepage.webp');
             }
         }
 
@@ -72,6 +73,15 @@
         color: white;
         font-size: 2rem;
 
+    }
+
+    &__list {
+        text-transform: capitalize;
+        font-size: 1.7rem;
+        list-style: none;
+        line-height: 5rem;
+        margin-top: 7rem;
+        overflow: none;
     }
 
 
