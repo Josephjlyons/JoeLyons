@@ -27,7 +27,7 @@ const Portfolio = () => {
                 <div className='portfolio__item--hidden'>
 
                     <ul className='portfolio__list'>
-                        <li>Search for breweries with OpenBreweryDB API</li>
+                        <li>Search with OpenBreweryDB API</li>
                         <li>Customize search with zip codes</li>
                         <li>Favorite and save breweries</li>
                         <li>View information of breweries</li>
@@ -45,9 +45,9 @@ const Portfolio = () => {
 
                 <ul className='portfolio__list'>
                         <li>Secure Bcrypt login</li>
-                        <li>Create a ready to use character in minutes</li>
-                        <li>Randomly generated stats from DND API </li>
-                        <li>Create and view multiple created characters</li>
+                        <li>Create a ready to use character</li>
+                        <li>generated stats from DND API </li>
+                        <li>view multiple created characters</li>
                         <li>Easy navigation for character switching</li>
                     </ul>
                     <a href="https://github.com/tjvig94/dnd-exp"><i className="header__icons fab fa-github-square"></i></a>
