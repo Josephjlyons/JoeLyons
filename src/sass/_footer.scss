@@ -4,6 +4,7 @@
     background-color: $color-primary-dark;
     color: white;
     grid-column: full-start/ center-end;
+    grid-row: 5/5;
 
     .nav {
         list-style: none;
@@ -28,7 +29,7 @@
     
         }
     
-        &__link:hover,
+
         &__link:active{
             background-color: rgba(#fff, .05);
             transform: translateY(-3px);

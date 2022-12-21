@@ -4,6 +4,7 @@
 .portfolio {
     background-color: $color-primary-dark;
     grid-column: full-start/ center-end;
+    grid-row: 4/4;
 
     display: grid;
     grid-template-columns: 1fr repeat(6, 1fr) 1fr;

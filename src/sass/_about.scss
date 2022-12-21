@@ -2,7 +2,8 @@
 
 .about {
     background-color: $color-primary-dark;
-    grid-column: center-start 1/ col-end 4;
+    grid-column: col-start 2/ center-end;
+    grid-row: 2/2;
     color: white;
 
     // margin: 12rem 0;
