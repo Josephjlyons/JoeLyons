@@ -1,4 +1,6 @@
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faAt, faFile} from '@fortawesome/free-solid-svg-icons';
 import '../../sass/_header.scss';
 
 const Header = () => {
@@ -16,11 +18,11 @@ const Header = () => {
             <div className='header__social'>
                 <ul>
                     {/* build out social accounts with icons */}
-                    <a href="https://github.com/Josephjlyons"><i className="header__icons fab fa-github-square"></i></a>
-                    <a href="mailto:josephjlyons90@gmail.com"><i className="header__icons fas fa-at"></i></a>
-                    <a href="https://www.linkedin.com/in/josephlyons1990/"><i className=" header__icons fab fa-linkedin"></i></a>
-                    <a href='https://docs.google.com/document/d/14y2lHTV8S7WNrUancx8AV5NL0C6BFgX0oCL4gwMoIgk/export?format=pdf' ><i className="header__icons fas fa-file"></i></a>
-                    <i class="fa-solid fa-file-user"></i>
+                    <a href="https://github.com/Josephjlyons"><FontAwesomeIcon className="header__icons" icon={faGithub} /> </a>
+                    <a href="mailto:josephjlyons90@gmail.com"><FontAwesomeIcon className="header__icons" icon={faAt}/> </a>
+                    <a href="https://www.linkedin.com/in/josephlyons1990/"><FontAwesomeIcon className=" header__icons" icon={faLinkedin}/> </a>
+                    <a href='https://docs.google.com/document/d/14y2lHTV8S7WNrUancx8AV5NL0C6BFgX0oCL4gwMoIgk/export?format=pdf'>
+                    <FontAwesomeIcon className='header__icons' icon={faFile}/></a>
 
 
                 </ul>
