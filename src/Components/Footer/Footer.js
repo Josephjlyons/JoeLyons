@@ -1,20 +1,22 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faArrowCircleUp} from '@fortawesome/free-solid-svg-icons';
+
+
 
 import '../../sass/_footer.scss';
 
 const Footer = () => {
 return(
     <div className='footer'>
-         <ul class="nav">
-            <li class="nav__item"><a href="#" class="nav__link">Joseph Lyons</a></li>
-            {/* <li class="nav__item"><a href="#" class="nav__link">Request proposal</a></li> */}
-            {/* <li class="nav__item"><a href="#" class="nav__link">Download home planner</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Submit your property</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Come work with us</a></li> */}
-        </ul>
+     
+            <div className='footer__icon'>
 
-        <p class="copyright">
-            &copy; Copyright 2022
+            <a href='/#' ><FontAwesomeIcon className='footer__icon'icon={faArrowCircleUp} /></a>
+            </div>
+            <p className='name'> Joe Lyons</p>
+
+        <p className="copyright">
+            &copy; 2023
         </p>
     </div>
 )
