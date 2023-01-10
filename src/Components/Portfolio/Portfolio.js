@@ -1,5 +1,7 @@
 import '../../sass/_portfolio.scss';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
+import {faGlobe} from '@fortawesome/free-solid-svg-icons';
 
 const Portfolio = () => {
     return (
@@ -17,7 +19,7 @@ const Portfolio = () => {
                         <li>Easy to use interface</li>
                     </ul>
 
-                    <a href="https://github.com/Josephjlyons/YelpCamp"><i className="header__icons fab fa-github-square"></i></a>
+                    <a href="https://github.com/Josephjlyons/YelpCamp"><FontAwesomeIcon className="header__icons" icon={faGithub} /></a>
                 </div>
 
             </figure>
@@ -33,8 +35,8 @@ const Portfolio = () => {
                         <li>View information of breweries</li>
                         <li>Overhead map location of brewery</li>
                     </ul>
-                    <a href="https://github.com/Josephjlyons/DraughtPicker"><i className="header__icons fab fa-github-square"></i></a>
-                    <a href='https://josephjlyons.github.io/DraughtPicker/'><i className='header__icons fas fa-globe'></i></a>
+                    <a href="https://github.com/Josephjlyons/DraughtPicker"><FontAwesomeIcon className="header__icons" icon={faGithub} /></a>
+                    <a href='https://josephjlyons.github.io/DraughtPicker/'><FontAwesomeIcon className="header__icons" icon={faGlobe} /></a>
                 </div>
 
             </figure>
@@ -50,7 +52,7 @@ const Portfolio = () => {
                         <li>view multiple created characters</li>
                         <li>Easy navigation for character switching</li>
                     </ul>
-                    <a href="https://github.com/tjvig94/dnd-exp"><i className="header__icons fab fa-github-square"></i></a>
+                    <a href="https://github.com/tjvig94/dnd-exp"><FontAwesomeIcon className="header__icons" icon={faGithub} /></a>
                 </div>
 
             </figure>

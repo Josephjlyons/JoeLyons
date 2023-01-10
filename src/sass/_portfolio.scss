@@ -77,6 +77,8 @@
     }
 
     &__list {
+        font-family: $secondary-font;
+        font-weight: 500;
         text-transform: capitalize;
         font-size: 1.7rem;
         list-style: none;
@@ -84,6 +86,5 @@
         margin-top: 7rem;
         overflow: none;
     }
-
 
 }
