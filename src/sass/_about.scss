@@ -1,8 +1,7 @@
 @import './base';
-
 .about {
     background-color: $color-primary-dark;
-    grid-column: col-start 2/ center-end;
+    grid-column: full-start/ center-end;
     grid-row: 2/2;
     color: white;
 
@@ -23,13 +22,15 @@
     grid-template-rows: min-content min-content;
     row-gap: 1.5rem;
     column-gap: 2.5rem;
+   
 
     &__heading{
-        font-size: 1.9rem;
+        font-size: 2.1rem;
+        font-family: $primary-font;
     }
 
     &__icon {
-        fill: rgb(74, 72, 72);
+        color: rgb(74, 72, 72);
         width: 3.5rem;
         height: 3.5rem;
         grid-row: 1 / span 2;
@@ -38,6 +39,13 @@
     }
 
     &__text {
-        font-size: 1.2rem;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 1.5rem;
+
+        @media only screen and (max-width: $bp-largest){
+            font-size: 1rem;
+        }
     }
 }
+

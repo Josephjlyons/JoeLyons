@@ -3,6 +3,7 @@
 .header {
     // background-color: red;
     grid-column: full-start /center-end;
+    grid-row: 1/1;
 
     background-image: linear-gradient(rgba(rgb(11, 10, 10), .45), rgba(rgb(2, 2, 2), .4)), url('../../public//images/header-image-4.webp');
     background-size: cover;
@@ -18,6 +19,10 @@
     justify-content: center;
     font-family: 'Montserrat';
     font-weight: 300;
+
+    @media only screen and (max-width: $bp-largest){
+       grid-column: 1/-1;
+    }
 
     &__nav{
         display: flex;
@@ -43,6 +48,10 @@
         grid-row: 2/2;
         font-size: 8rem;
         letter-spacing: 5px;
+
+        @media only screen and (max-width:$bp-largest) {
+            font-size: 6rem;
+        }
  
 
     }
@@ -85,7 +94,7 @@
     }
 
     &__icons{
-
+        z-index: 10;
         color: white;
         font-size: 5rem;
         padding: 2rem;
@@ -93,6 +102,9 @@
 
         &:hover{
             transform: translateY(-.2rem);
+        }
+        @media only screen and (max-width:$bp-largest) {
+            font-size: 4rem;
         }
         
     }
