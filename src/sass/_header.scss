@@ -1,7 +1,6 @@
 @import './base';
 
 .header {
-    // background-color: red;
     grid-column: full-start /center-end;
     grid-row: 1/1;
 
@@ -49,8 +48,9 @@
         font-size: 8rem;
         letter-spacing: 5px;
 
-        @media only screen and (max-width:$bp-largest) {
+        @media only screen and (max-width: $bp-largest) {
             font-size: 6rem;
+            text-align: center;
         }
  
 
@@ -96,7 +96,6 @@
     &__icons{
         z-index: 10;
         color: white;
-        font-size: 5rem;
         padding: 2rem;
         justify-content: center;
 
@@ -105,6 +104,10 @@
         }
         @media only screen and (max-width:$bp-largest) {
             font-size: 4rem;
+        }
+
+        @media only screen and (max-width: 1100px){
+            padding: 1rem;
         }
         
     }
