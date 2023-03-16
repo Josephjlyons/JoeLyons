@@ -13,7 +13,7 @@ const Portfolio = () => {
                 <div className='portfolio__item--hidden'>
                 <ul className='portfolio__list'>
                         <li>Secure passport login</li>
-                        <li>Controllable map with campground data</li>
+                        <li>Interactive Map</li>
                         <li>image uploading</li>
                         <li>Protected routes</li>
                         <li>Easy to use interface</li>
@@ -50,7 +50,7 @@ const Portfolio = () => {
                         <li>Create a ready to use character</li>
                         <li>generated stats from DND API </li>
                         <li>view multiple created characters</li>
-                        <li>Easy navigation for character switching</li>
+                        <li>Easily swap characters</li>
                     </ul>
                     <a href="https://github.com/tjvig94/dnd-exp"><FontAwesomeIcon className="header__icons" icon={faGithub} /></a>
                 </div>
