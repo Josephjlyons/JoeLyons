@@ -61,6 +61,8 @@
             color: white;
             font-size: 10rem;
             visibility: hidden;
+
+         
         }
 
         &:hover &--hidden {
@@ -73,7 +75,7 @@
         text-align: center;
         color: white;
         font-size: 2rem;
-
+        
     }
 
     &__list {
@@ -85,6 +87,12 @@
         line-height: 5rem;
         margin-top: 7rem;
         overflow: none;
+
+        @media only screen and (max-width: $bp-largest){
+            font-size: 1.25rem;
+            line-height: 3rem;
+            margin-top: 4rem;
+        }
     }
 
 }

@@ -16,7 +16,7 @@ const About = () => {
             </div>
             <div className='feature'>
         
-                <FontAwesomeIcon className='feature__icon' icon={faReact} spin />
+                <FontAwesomeIcon className='feature__icon' icon={faReact} />
                 <h4 className='feature__heading'>React</h4>
                 <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet?</p>
             </div>

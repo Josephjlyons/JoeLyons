@@ -3,7 +3,9 @@ import '../../sass/_sidebar.scss';
 
 const Sidebar = () => {
 return(
-    <nav className="sidebar">Sidebar</nav>
+    <div className="sidebar">
+    <button className="nav-btn"></button>
+</div>
 )
 }
 
