@@ -12,7 +12,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    align-items: start;
+
+
+    @media only screen and (max-width: 700px){
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
 }
 
 .feature {
@@ -27,6 +32,9 @@
     &__heading{
         font-size: 2.1rem;
         font-family: $primary-font;
+        @media only screen and (max-width: $bp-medium){
+            font-size: 1.8rem;
+        }
     }
 
     &__icon {
@@ -35,6 +43,10 @@
         height: 3.5rem;
         grid-row: 1 / span 2;
         transform: translateY(-1rem);
+        @media only screen and (max-width: $bp-medium){
+            width: 3rem;
+            height: 3rem;
+        }
 
     }
 
@@ -44,7 +56,11 @@
         font-size: 1.5rem;
 
         @media only screen and (max-width: $bp-largest){
-            font-size: 1rem;
+            font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            font-size: 1.2rem;
         }
     }
 }
