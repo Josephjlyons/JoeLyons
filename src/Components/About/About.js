@@ -14,7 +14,7 @@ const About = () => {
             <div className='feature feature--1'>
                 <FontAwesomeIcon className='feature__icon' icon={faJsSquare} />
                 <h4 className='feature__heading'>Javascript</h4>
-                <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet? adipisicing elit.</p>
+                <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet? </p>
             </div>
 
             <div className='feature feature--2'>
