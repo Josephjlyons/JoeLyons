@@ -7,44 +7,43 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
     return (
-        // <div id='about' className='about'>
-<div className='features'>
+        <div className='features'>
 
 
             <div className='feature feature--1'>
                 <FontAwesomeIcon className='feature__icon' icon={faJsSquare} />
-                <h4 className='feature__heading'>Javascript</h4>
+                <h2 className='feature__heading'>Javascript</h2>
                 <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet? </p>
             </div>
 
             <div className='feature feature--2'>
                 <FontAwesomeIcon className='feature__icon' icon={faReact} />
-                <h4 className='feature__heading'>React</h4>
+                <h2 className='feature__heading'>React</h2>
                 <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet?</p>
             </div>
             <div className='feature feature--3'>
                 <FontAwesomeIcon className='feature__icon' icon={faNodeJs} />
-                <h4 className='feature__heading'>Nodejs</h4>
+                <h2 className='feature__heading'>Nodejs</h2>
                 <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet?</p>
             </div>
             <div className='feature feature--4'>
                 <FontAwesomeIcon className='feature__icon' icon={faSass} />
-                <h4 className='feature__heading'>Css/Sass</h4>
+                <h2 className='feature__heading'>Css/Sass</h2>
                 <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet?</p>
             </div>
             <div className='feature feature--5'>
                 <FontAwesomeIcon className='feature__icon' icon={faDatabase} />
-                <h4 className='feature__heading'>MongoDB</h4>
+                <h2 className='feature__heading'>MongoDB</h2>
                 <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet?</p>
             </div>
             <div className='feature feature--6'>
                 <FontAwesomeIcon className='feature__icon' icon={faHtml5} />
-                <h4 className='feature__heading'>HTML</h4>
+                <h2 className='feature__heading'>HTML</h2>
                 <p className='feature__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum cupiditate amet?</p>
             </div>
 
-            </div>
-        // </div>
+        </div>
+    
     )
 }
 
