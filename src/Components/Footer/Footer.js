@@ -11,7 +11,7 @@ return(
      
             <div className='footer__icon'>
 
-            <a href='/#' ><FontAwesomeIcon className='footer__icon'icon={faArrowCircleUp} /></a>
+            <a href='/#' aria-label='back to top button' ><FontAwesomeIcon className='footer__icon'icon={faArrowCircleUp} /></a>
             </div>
             <p className='name'> Joe Lyons</p>
 
