@@ -36,6 +36,8 @@ body {
     line-height: 1.6;
 }
 
+//need to fix spacing on screen resizing. row gap?
+
 .container {
     display: grid;
     grid-template-columns: 8rem [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] 8rem [full-end];
