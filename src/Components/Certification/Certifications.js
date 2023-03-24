@@ -12,12 +12,12 @@ import '../../sass/_slick.scss';
 const Certifications = () => {
     const settings = {
 
-        // dots: true,
-        autoPlay: true,
-        autoPlaySpeed: 500,
-        fade: true,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover:true,
         lazyLoad:true,
-        // adaptiveHeight: true,
         infinite: true,
         speed: 500,
 
@@ -42,7 +42,7 @@ const Certifications = () => {
             <Slider {...settings}>
 
 
-                <figure className='certifications__item certifications__item--1'><img src={unhCert}
+                <figure className='certifications__item certifications__item--1'><img width={600} height={400} src={unhCert}
                     alt='Unh Certification' className='cert-images' />
                 </figure>
 
