@@ -86,11 +86,17 @@
         @media only screen and (max-width: 900px){
             font-size: 1.6rem;
         }
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.3rem;
+            grid-column: 2/6;
+            
+        }
     }
 
     &__social{ 
 
-        grid-column: 3/5;
+        grid-column: 2/6;
         grid-row: 4/4;
         justify-self: center;
         transform: translateY(-2rem);
@@ -124,18 +130,22 @@
             font-size: 4rem;
         }
 
-        @media only screen and (max-width: 1100px){
-            padding: 1rem;
-        }
+        // @media only screen and (max-width: 1100px){
+        //     padding: 1rem;
+        // }
 
-        @media only screen and (max-width: 855px){
-            padding: .75rem;
-        }
+        // @media only screen and (max-width: 855px){
+        //     padding: .75rem;
+        // }
         @media only screen and (max-width: $bp-medium){
             padding: .6rem;
             height: 3.2rem;
             width: 3.2rem;
         }
+
+        // @media only screen and (max-width:$bp-small){
+     
+        // }
         
     }
 
