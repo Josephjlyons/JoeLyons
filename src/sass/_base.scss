@@ -9,6 +9,7 @@ $bp-largest: 75em; // 1200/16 =75em
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
 $bp-small: 37.5em; // 600px
+$bp-smallest:25em; //400px
 
 
 
@@ -19,6 +20,7 @@ $bp-small: 37.5em; // 600px
     padding: 0;
     box-sizing: inherit;
 
+
 }
 
 html {
@@ -26,6 +28,9 @@ html {
     font-size: 62.5%; //1 rem = 10px
     scroll-behavior: smooth;
 
+    @media only screen and (max-width: $bp-smallest){
+        font-size: 50%;
+    }
 }
 
 body {
