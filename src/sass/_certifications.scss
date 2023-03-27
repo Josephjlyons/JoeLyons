@@ -12,16 +12,25 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     justify-content: center;
+    align-items: center;
 
 
     &__item {
 
         justify-self: center;
         align-self: center;
+        // &:hover{
+        //     scale: 1.15;
+        // }
 
         &--1 {
-            transform: translateY(-5rem);
-            // margin-bottom: 10rem;
+            max-height: 100%;
+            max-width: 100%;
+            transform: translateY(-4.2rem);
+            
+            @media only screen and (max-width: 400px){
+                height: 250px;
+            }
         }
     }
 }
@@ -29,5 +38,9 @@
 .cert-images {
 
     scale: .8;
+
+    // @media only screen and (max-width: $bp-large) {
+    //     scale: .55;
+    // }
 
 }
