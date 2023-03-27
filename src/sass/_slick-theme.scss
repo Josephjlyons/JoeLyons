@@ -130,9 +130,9 @@ $slick-opacity-not-active: 0.25 !default;
 
 /* Dots */
 
-.slick-dotted.slick-slider {
-    margin-bottom: 30px;
-}
+// .slick-dotted.slick-slider {
+//     margin-bottom: 30px;
+// }
 
 .slick-dots {
     position: absolute;
@@ -180,7 +180,7 @@ $slick-opacity-not-active: 0.25 !default;
                 font-size: $slick-dot-size;
                 line-height: 20px;
                 text-align: center;
-                color: $slick-dot-color;
+                color: white;
                 opacity: $slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
