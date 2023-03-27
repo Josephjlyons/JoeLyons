@@ -2,18 +2,23 @@
 
 
 .features {
-    grid-column: full-start/ center-end;
+    grid-column: full-start / center-end;
+    grid-row: 2/2;
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row: 2/2;
+    grid-template-columns: repeat(3, minmax(33.33%,1fr));
+    grid-template-rows: repeat(2, minmax(0,1fr));
     color: white;
-    margin-top: 2rem;
+    margin-top: 5rem;
     background-color: $color-primary-dark;
+    
+
+    @media only screen and (max-width:$bp-medium){
+        row-gap: 3rem;
+    }
 
     @media only screen and (max-width: $bp-small) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
         grid-template-rows: repeat(3, 1fr);
     }
 }
@@ -98,8 +103,8 @@
     }
 
     @media only screen and (max-width:$bp-small){
-        padding: 1.5rem;
-        margin-top: 1rem;
+        // padding: 1rem;
+        // margin-top: 1rem;
 
     &--1 {
         grid-column: 1/1;
