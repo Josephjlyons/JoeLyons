@@ -8,39 +8,43 @@
     grid-row: 3/ 3;
     color: whitesmoke;
 
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-rows: 1fr, min-content;
     justify-items: center;
     justify-content: center;
     align-items: center;
-
 
     &__item {
 
         justify-self: center;
         align-self: center;
-        // &:hover{
-        //     scale: 1.15;
-        // }
+
+        //Need to adjust 1 for large screens and rest for smaller screen responsive
 
         &--1 {
-            max-height: 100%;
-            max-width: 100%;
-            transform: translateY(-4.2rem);
-            
-            @media only screen and (max-width: 400px){
-                height: 250px;
+            transform: translateY(-4rem);
+
+            @media only screen and (max-width: $bp-smallest) {
+                max-width: 100%;
+                max-height: 100%;
+                transform: translateY(4.2rem);
+
+            }
+        }
+
+        &--2,
+        &--3,
+        &--4,
+        &--5,
+        &--6 {
+            // transform: translateY(-4rem);
+            @media only screen and (max-width: $bp-smallest) {
+                transform: translateY(6.2rem);
             }
         }
     }
 }
 
 .cert-images {
-
     scale: .8;
-
-    // @media only screen and (max-width: $bp-large) {
-    //     scale: .55;
-    // }
-
 }
