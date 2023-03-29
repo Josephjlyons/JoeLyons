@@ -29,11 +29,11 @@ const Portfolio = () => {
                 <div className='portfolio__item--hidden'>
 
                     <ul className='portfolio__list'>
-                        <li>Search with OpenBreweryDB API</li>
-                        <li>Customize search with zip codes</li>
+                        <li>OpenBreweryDB API</li>
+                        <li>Search by zip codes</li>
                         <li>Favorite and save breweries</li>
                         <li>View information of breweries</li>
-                        <li>Overhead map location of brewery</li>
+                        <li>Map location of brewery</li>
                     </ul>
                     <a href="https://github.com/Josephjlyons/DraughtPicker"><FontAwesomeIcon className="header__icons" icon={faGithub} /></a>
                     <a href='https://josephjlyons.github.io/DraughtPicker/'><FontAwesomeIcon className="header__icons" icon={faGlobe} /></a>
@@ -47,9 +47,9 @@ const Portfolio = () => {
 
                 <ul className='portfolio__list'>
                         <li>Secure Bcrypt login</li>
-                        <li>Create a ready to use character</li>
+                        <li>Fast character creation</li>
                         <li>generated stats from DND API </li>
-                        <li>view multiple created characters</li>
+                        <li>view multiple characters</li>
                         <li>Easily swap characters</li>
                     </ul>
                     <a href="https://github.com/tjvig94/dnd-exp"><FontAwesomeIcon className="header__icons" icon={faGithub} /></a>

@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import './css/style.css';
 // import Sidebar from './Components/Sidebar/Sidebar';
 import Header from './Components/Header/Header';

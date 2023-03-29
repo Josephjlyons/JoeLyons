@@ -12,12 +12,12 @@ import '../../sass/_slick.scss';
 const Certifications = () => {
     const settings = {
 
-        dots: true,
-        arrows: false,
-        autoplay: true,
+        dots: false,
+        arrows: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnHover:true,
-        lazyLoad:true,
+        pauseOnHover: true,
+        lazyLoad: true,
         infinite: true,
         speed: 500,
 
@@ -25,45 +25,44 @@ const Certifications = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint:740,
-                settings:{
+                breakpoint: 740,
+                settings: {
                     slidesToShow: 1,
-            
-            }
-         }
+
+                }
+            },
 
         ]
-        
+
 
     };
     return (
 
-        <div id='about' className='certifications'>
+        <div className='certifications'>
             <Slider {...settings}>
 
-
-                <figure className='certifications__item certifications__item--1'><img width={600} height={400} src={unhCert}
-                    alt='Unh Certification' className='cert-images' />
+                <figure className='certifications__item certifications__item--1'><img src={unhCert}
+                    alt='Unh Certification'/>
                 </figure>
 
                 <figure className='certifications__item certifications__item--2'><img src={webdevCert}
-                    alt='Web Dev Certification' className='cert-images' />
+                    alt='Web Dev Certification'/>
                 </figure>
 
                 <figure className='certifications__item certifications__item--3'><img src={reactCert}
-                    alt='React Certification' className='cert-images' />
+                    alt='React Certification'/>
                 </figure>
 
                 <figure className='certifications__item certifications__item--4'><img src={advancedCSS}
-                    alt='Advanced Css and Sass Certification' className='cert-images' />
+                    alt='Advanced Css and Sass Certification'/>
                 </figure>
 
                 <figure className='certifications__item certifications__item--5'><img src={typescriptCert}
-                    alt='Typescript Certification' className='cert-images' />
+                    alt='Typescript Certification'/>
                 </figure>
 
                 <figure className='certifications__item certifications__item--6'><img src={algodataCert}
-                    alt='Algorithms Certification' className='cert-images' />
+                    alt='Algorithms Certification'/>
                 </figure>
             </Slider>
         </div>
