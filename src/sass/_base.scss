@@ -3,6 +3,12 @@ $color-primary-dark: #081013;
 
 $primary-font: 'Montserrat', 'sans-serif';
 $secondary-font: 'Open Sans', 'sans-serif';
+$background-image-filter: linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1));
+
+@mixin portfolio-hover{
+    transition: .2s;
+    transform: translateY(-.75rem);
+}
 
 //Media query breakpoints
 $bp-largest: 75em; // 1200/16 =75em
@@ -30,6 +36,8 @@ html {
 
     @media only screen and (max-width: $bp-smallest){
         font-size: 50%;
+        overflow-x: hidden;
+        position: relative;
     }
 }
 
@@ -41,6 +49,9 @@ body {
     line-height: 1.6;
 }
 
+a{
+    text-decoration: none;
+}
 //need to fix spacing on screen resizing. row gap?
 
 .container {
@@ -53,7 +64,7 @@ body {
     // }
 
     @media only screen and (max-width: $bp-large){
-        grid-template-rows: 100vh 60vh 45vh 40vw repeat(4, min-content); 
+        grid-template-rows: 100vh 60vh 45vh 55vw repeat(4, min-content); 
     }
 
     @media only screen and (max-width: $bp-medium){
