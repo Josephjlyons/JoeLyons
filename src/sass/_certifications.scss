@@ -7,22 +7,23 @@
     grid-column: full-start / center-end;
     grid-row: 3/ 3;
     color: whitesmoke;
+    margin: 0 auto;
 
     display: grid;
-    grid-template-rows: 1fr, min-content;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(6,1fr);
+
 
     &__item {
 
-        justify-self: center;
-        align-self: center;
+        scale: .8;
 
-        //Need to adjust 1 for large screens and rest for smaller screen responsive
+        @media only screen and (max-width: $bp-large) {
+            scale: .6;
+        }
 
         &--1 {
-            transform: translateY(-4rem);
+            // transform: translateY(-4.2rem);
 
             @media only screen and (max-width: $bp-smallest) {
                 max-width: 100%;
@@ -37,14 +38,11 @@
         &--4,
         &--5,
         &--6 {
+
             // transform: translateY(-4rem);
             @media only screen and (max-width: $bp-smallest) {
                 transform: translateY(6.2rem);
             }
         }
     }
-}
-
-.cert-images {
-    scale: .8;
 }
