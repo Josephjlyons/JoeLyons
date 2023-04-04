@@ -5,7 +5,7 @@ $primary-font: 'Montserrat', 'sans-serif';
 $secondary-font: 'Open Sans', 'sans-serif';
 $background-image-filter: linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1));
 
-@mixin portfolio-hover{
+@mixin portfolio-hover {
     transition: .2s;
     transform: translateY(-.75rem);
 }
@@ -15,7 +15,9 @@ $bp-largest: 75em; // 1200/16 =75em
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
 $bp-small: 37.5em; // 600px
-$bp-smallest:25em; //400px
+$bp-smaller: 31.25em; // 500px
+$bp-smallest: 25em; // 400px
+$bp-mini: 21.86em; // 350px
 
 
 
@@ -33,11 +35,13 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; //1 rem = 10px
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
 
-    @media only screen and (max-width: $bp-smallest){
-        font-size: 50%;
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 55%;
+        max-width: 100%;
         overflow-x: hidden;
-        position: relative;
     }
 }
 
@@ -49,26 +53,27 @@ body {
     line-height: 1.6;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 //need to fix spacing on screen resizing. row gap?
 
 .container {
     display: grid;
     grid-template-columns: 8rem [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] 8rem [full-end];
-    grid-template-rows: 100vh 80vh 50vh 40vw repeat(4, min-content);
+    grid-template-rows: 100vh 80vh min-content 40vw repeat(4, min-content);
 
-    // @media only screen and (max-width: 1140px){
-    //     grid-template-rows: 100vh 60vh 40vh 40vw repeat(4, min-content);
-    // }
-
-    @media only screen and (max-width: $bp-large){
-        grid-template-rows: 100vh 60vh 45vh 55vw repeat(4, min-content); 
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-rows: 100vh 60vh min-content 40vw repeat(4, min-content);
     }
 
-    @media only screen and (max-width: $bp-medium){
-        grid-template-rows: 100vh max-content 45vh max-content repeat(4, min-content); 
+    @media only screen and (max-width: $bp-large) {
+        grid-template-rows: 100vh 60vh min-content max-content repeat(4, min-content);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 100vh max-content min-content max-content repeat(4, min-content);
     }
 
 }
