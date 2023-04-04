@@ -7,7 +7,7 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
     return (
-        <div className='features'>
+        <div id='about' className='features'>
 
 
             <div className='feature feature--1'>
@@ -43,7 +43,7 @@ const About = () => {
             </div>
 
         </div>
-    
+
     )
 }
 
