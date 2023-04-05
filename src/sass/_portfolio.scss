@@ -13,7 +13,7 @@
 
 
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 2rem;
@@ -23,7 +23,7 @@
     &__item {
         background-size: cover;
         background-position: center;
- 
+        border-radius: .5rem;
 
         &--1 {
             background-image: url('../img/yelpCamp.webp');
@@ -35,7 +35,7 @@
                 background-image: $background-image-filter, url('../img/yelpCamp.webp');
             }
 
-            @media only screen and (max-width: $bp-medium) {
+            @media only screen and (max-width: $bp-large) {
                 grid-column: 2/6;
                 grid-row: 1/1;
             }
@@ -56,7 +56,7 @@
                 background-image: $background-image-filter, url('../img//draught-picker.webp');
             }
 
-            @media only screen and (max-width: $bp-medium) {
+            @media only screen and (max-width: $bp-large) {
                 grid-column: 2/6;
                 grid-row: 2/2;
             }
@@ -75,7 +75,7 @@
                 background-image: $background-image-filter, url('../img/dnd-homepage.webp');
             }
 
-            @media only screen and (max-width: $bp-medium) {
+            @media only screen and (max-width: $bp-large) {
                 grid-column: 2/6;
                 grid-row: 3/3;
             }
