@@ -3,7 +3,7 @@ import '../../sass/_about.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJsSquare, faReact, faNodeJs, faSass, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import myPhoto from '../../img/photoMe2.png';
+// import myPhoto from '../../img/photoMe2.png';
 
 
 const About = () => {
@@ -12,9 +12,9 @@ const About = () => {
             {/* <div className='features__bio'>  </div> */}
                 {/* <h2 className='features__header'>About Me</h2> */}
                
-                    <figure className='features__myPhoto'><img src={myPhoto} alt='headshot of joe lyons'>
+                    {/* <figure className='features__myPhoto'><img src={myPhoto} alt='headshot of joe lyons'>
                         </img>
-                        </figure>
+                        </figure> */}
                     
                     <p className='features__bio-text'>Lorem ipsum dolor sit amet, consectee similique harum, alias dignissimos laudantium placeat dicta,Lorem ipsum dolor sit amet, consectee similique harum, alias dignissimos laudantium placeat dicta,Lorem ipsum dolor sit amet, consectee similique harum, alias dignissimos laudantium placeat dicta,Lorem ipsum dolor sit amet, consectee similique harum, alias dignissimos laudantium placeat dicta,Lorem ipsum dolor sit amet, consectee similique harum, alias dignissimos laudantium placeat dicta,Lorem ipsum dolor sit amet, consectee similique harum, alias dignissimos laudantium placeat dicta,
                     </p>
