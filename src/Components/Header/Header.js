@@ -15,7 +15,7 @@ const Header = () => {
             </ul>
             <h1 className='header__h1'>Joe Lyons</h1>
             <p className='header__text'>A New Hampshire based full stack developer specializing in front end engineering</p>
-            <div className='header__social'>
+            <div className='header__social-list'>
                 <ul>
 
                     <li>  <a href="https://github.com/Josephjlyons" aria-label='github'><FontAwesomeIcon className="header__icons" icon={faGithub} /> </a></li>

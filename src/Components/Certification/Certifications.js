@@ -57,7 +57,7 @@ const Certifications = () => {
                     alt='Algorithms Certification' />
                     </FadeInSideRTL>
                 </figure>
-            {/* </Slider> */}
+
            
         </div>
 

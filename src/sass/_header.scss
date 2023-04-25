@@ -10,7 +10,6 @@
     height: 100%;
     max-width: 100%;
     padding: 8rem;
-    overflow-x: none;
     padding-top: 4rem;
     display: grid;
 
@@ -56,8 +55,10 @@
         color: white;
         grid-column: 2/6;
         grid-row: 2/2;
-        font-size: 8rem;
+        font-size: 7rem;
         letter-spacing: 5px;
+        font-weight: 500;
+
 
         @media only screen and (max-width: $bp-largest) {
             font-size: 6rem;
@@ -80,7 +81,6 @@
         color: white;
         text-transform: capitalize;
         font-weight: 400;
-
 
         &::after {
             content: '';
@@ -105,12 +105,12 @@
         }
     }
 
-    &__social {
+    &__social-list {
 
         grid-column: 2/6;
         grid-row: 4/4;
         justify-self: center;
-        transform: translateY(-2rem);
+
 
         // &::before,
         &::after {
@@ -124,12 +124,13 @@
             list-style: none;
             display: inline;
         }
-        @media only screen and (max-width: $bp-smaller){
-           grid-column: 1/-1;
+
+        @media only screen and (max-width: $bp-smaller) {
+            grid-column: 1/-1;
         }
-
-
     }
+
+
 
     &__icons {
         height: 3.5rem;
@@ -138,6 +139,7 @@
         color: white;
         padding: 2rem;
         justify-content: center;
+        animation: 1s ease-out moveInUp;
 
         &:hover {
             transform: translateY(-.2rem);
@@ -153,7 +155,7 @@
             width: 3.2rem;
         }
 
-       
+
     }
 
 
