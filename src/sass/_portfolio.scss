@@ -8,15 +8,16 @@
 
     display: grid;
     grid-template-columns: 1fr repeat(6, 1fr) 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     column-gap: 2rem;
-
-
 
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 2rem;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
     }
 
 
@@ -24,15 +25,19 @@
         background-size: cover;
         background-position: center;
         border-radius: .5rem;
+        display: grid;
 
         &--1 {
-            background-image: url('../img/yelpCamp.webp');
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, min-content);
+            // background-image: url('../img/yelpCamp.webp');
             grid-column: 2/4;
             grid-row: 2/6;
 
             &:hover {
-               @include portfolio-hover;
-                background-image: $background-image-filter, url('../img/yelpCamp.webp');
+                // @include portfolio-hover;
+                // background-image: $background-image-filter, url('../img/yelpCamp.webp');
             }
 
             @media only screen and (max-width: $bp-large) {
@@ -40,56 +45,128 @@
                 grid-row: 1/1;
             }
 
-            @media only screen and (max-width: $bp-small){
+            @media only screen and (max-width:$bp-medium) {
+                background-image: none;
+
+                &:hover {
+                    background-image: none;
+                }
+            }
+
+            @media only screen and (max-width: $bp-small) {
                 grid-column: 1/-1;
             }
 
         }
 
+        &--yelp {
+            object-fit: cover;
+            width: 100%;
+            grid-column: 1/-1;
+            grid-row: 1/3;
+
+            // @media only screen and (min-width: $bp-medium) {
+            //     display: none;
+            // }
+        }
+
+        &--list1 {
+            @include portfolio-list;
+
+            @media only screen and (max-width:$bp-medium) {
+                background-color: red;
+                grid-column: 2/4;
+
+            }
+        }
+
+
+        //////////////////////////////////////////////////////////////////////////
+
         &--2 {
-            background-image: url('../img/draught-picker.webp');
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, min-content);
+            // background-image: url('../img/draught-picker.webp');
             grid-column: 4/6;
             grid-row: 2/6;
 
-            &:hover {
-                @include portfolio-hover;
-                background-image: $background-image-filter, url('../img//draught-picker.webp');
-            }
+            // &:hover {
+            //     @include portfolio-hover;
+            //     background-image: $background-image-filter, url('../img//draught-picker.webp');
+            // }
 
             @media only screen and (max-width: $bp-large) {
                 grid-column: 2/6;
                 grid-row: 2/2;
             }
-            @media only screen and (max-width: $bp-small){
+
+            @media only screen and (max-width: $bp-small) {
                 grid-column: 1/-1;
             }
         }
+        &--draught {
+            object-fit: cover;
+            width: 100%;
+            grid-column: 1/-1;
+            grid-row: 1/3;
 
+            // @media only screen and (min-width: $bp-medium) {
+            //     display: none;
+            // }
+        }
+        &--list2 {
+            @include portfolio-list;
+
+            @media only screen and (max-width:$bp-medium) {
+                background-color: red;
+                grid-column: 2/4;
+
+            }
+        }
+
+        //////////////////////////////////////////////////////////////////////////
         &--3 {
-            background-image: url('../img/dnd-homepage.webp');
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, min-content);
+            // background-image: url('../img/dnd-homepage.webp');
             grid-column: 6/8;
             grid-row: 2/6;
 
-            &:hover {
-                @include portfolio-hover;
-                background-image: $background-image-filter, url('../img/dnd-homepage.webp');
-            }
+            // &:hover {
+            //     @include portfolio-hover;
+            //     background-image: $background-image-filter, url('../img/dnd-homepage.webp');
+            // }
 
             @media only screen and (max-width: $bp-large) {
                 grid-column: 2/6;
                 grid-row: 3/3;
             }
-            @media only screen and (max-width: $bp-small){
+
+            @media only screen and (max-width: $bp-small) {
                 grid-column: 1/-1;
             }
         }
+        &--dnd{
+            object-fit: cover;
+            width: 100%;
+            grid-column: 1/-1;
+            grid-row: 1/3;   
+        }
 
+
+        //////////////////////////////////////////////////////////////////////////
         &--hidden {
             text-align: center;
             color: white;
             font-size: 10rem;
             visibility: hidden;
+            grid-column: 2/4;
 
+            @media only screen and (max-width:$bp-medium) {
+                visibility: visible;
+            }
 
         }
 
@@ -104,22 +181,8 @@
         color: white;
         font-size: 2rem;
 
-    }
-
-    &__list {
-        font-family: $secondary-font;
-        font-weight: 500;
-        text-transform: capitalize;
-        font-size: 1.7rem;
-        list-style: none;
-        line-height: 5rem;
-        margin-top: 7rem;
-        overflow: hidden;
-
-        @media only screen and (max-width: $bp-largest) {
-            font-size: 1.25rem;
-            line-height: 3rem;
-            margin-top: 4rem;
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
         }
 
     }
