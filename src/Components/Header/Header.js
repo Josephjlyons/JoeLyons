@@ -18,11 +18,11 @@ const Header = () => {
             <div className='header__social-list'>
                 <ul>
 
-                    <li>  <a href="https://github.com/Josephjlyons" aria-label='github'><FontAwesomeIcon className="header__icons" icon={faGithub} /> </a></li>
-                    <li>  <a href="mailto:josephjlyons90@gmail.com" aria-label='email'><FontAwesomeIcon className="header__icons" icon={faAt} /> </a></li>
-                    <li>  <a href="https://www.linkedin.com/in/josephlyons1990/" aria-label='linkedIn'><FontAwesomeIcon className=" header__icons" icon={faLinkedin} /> </a></li>
+                    <li>  <a href="https://github.com/Josephjlyons" aria-label='github'><FontAwesomeIcon className="header__icons header__icons--1" icon={faGithub} /> </a></li>
+                    <li>  <a href="mailto:josephjlyons90@gmail.com" aria-label='email'><FontAwesomeIcon className="header__icons header__icons--2" icon={faAt} /> </a></li>
+                    <li>  <a href="https://www.linkedin.com/in/josephlyons1990/" aria-label='linkedIn'><FontAwesomeIcon className=" header__icons header__icons--3" icon={faLinkedin} /> </a></li>
                     <li>  <a href='https://docs.google.com/document/d/14y2lHTV8S7WNrUancx8AV5NL0C6BFgX0oCL4gwMoIgk/export?format=pdf' aria-label='resume'>
-                        <FontAwesomeIcon className='header__icons' icon={faFile} /></a></li>
+                        <FontAwesomeIcon className='header__icons header__icons--4' icon={faFile} /></a></li>
 
 
                 </ul>

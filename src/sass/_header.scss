@@ -139,7 +139,17 @@
         color: white;
         padding: 2rem;
         justify-content: center;
-        animation: 1s ease-out moveInUp;
+        animation: .8s ease-in moveInUp backwards;
+
+        &--2{
+            animation-delay: .2s;
+        }
+        &--3{
+            animation-delay: .4s;
+        }
+        &--4{
+            animation-delay: .6s;
+        }
 
         &:hover {
             transform: translateY(-.2rem);
