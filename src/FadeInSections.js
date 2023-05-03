@@ -97,4 +97,37 @@ const FadeInSideRTL = (props) => {
     </div>
   );
 }
-export {FadeInSections, FadeInSideLTR, FadeInSideRTL};
+
+
+const FadeInDown = (props) => {
+  const [isVisible, setVisible] = useState(false);
+
+  const domRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+  
+      if (entries[0].isIntersecting) {
+       
+        setVisible(true);
+
+
+        observer.unobserve(domRef.current);
+      }
+    });
+
+    observer.observe(domRef.current);
+
+
+  }, []);
+
+  return (
+    <div
+      ref={domRef}
+      className={`fade-in-down ${isVisible ? "is-visible" : ""}`}
+    >
+      {props.children}
+    </div>
+  );
+}
+export {FadeInSections, FadeInSideLTR, FadeInSideRTL, FadeInDown};
