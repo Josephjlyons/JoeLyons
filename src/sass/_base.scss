@@ -3,12 +3,8 @@ $color-primary-dark: #081013;
 
 $primary-font: 'Montserrat', 'sans-serif';
 $secondary-font: 'Open Sans', 'sans-serif';
-$background-image-filter: linear-gradient(rgba(rgb(11, 10, 10), .8), rgba(rgb(2, 2, 2), 1));
+$bp-header-text-color: rgb(255, 255, 255);
 
-@mixin portfolio-hover {
-    transition: .2s;
-    transform: translateY(-.75rem);
-}
 
 //Media query breakpoints
 $bp-largest: 75em; // 1200/16 =75em
@@ -19,6 +15,62 @@ $bp-smaller: 31.25em; // 500px
 $bp-smallest: 25em; // 400px
 $bp-mini: 21.86em; // 350px
 
+@mixin portfolio-hover {
+    transition: .2s;
+    transform: translateY(-.75rem);
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+@mixin social-icons {
+    height: 3.5rem;
+    width: 3.5rem;
+    color: white;
+    padding: 2rem;
+    justify-content: center;
+}
+
+@mixin portfolio-list {
+
+    font-family: $secondary-font;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    line-height: 5rem;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 1.4rem;
+        line-height: 3rem;
+        // margin-top: 4rem;
+    }
+
+    @media only screen and (min-width: $bp-largest) {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+        // margin-top: 4rem;
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    60% {
+        transform: translateY(2rem);
+    }
+
+    80% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 
 
 *,
@@ -27,8 +79,6 @@ $bp-mini: 21.86em; // 350px
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-
-
 }
 
 html {
@@ -37,6 +87,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     max-width: 100%;
+
 
     @media only screen and (max-width: $bp-smallest) {
         font-size: 55%;
@@ -47,8 +98,10 @@ html {
 
 body {
     font-family: white;
-    background-color: $color-primary-dark;
+    background-color: black;
 
+
+    overflow: hidden;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -57,15 +110,19 @@ a {
     text-decoration: none;
 }
 
-//need to fix spacing on screen resizing. row gap?
 
 .container {
     display: grid;
     grid-template-columns: 8rem [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] 8rem [full-end];
-    grid-template-rows: 100vh 80vh min-content 40vw repeat(4, min-content);
+    grid-template-rows: 100vh 40vh 50vw 50vw repeat(4, min-content);
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 1px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
 
     @media only screen and (max-width: $bp-largest) {
-        grid-template-rows: 100vh 60vh min-content 40vw repeat(4, min-content);
+        grid-template-rows: 100vh 40vh min-content 50vw repeat(4, min-content);
     }
 
     @media only screen and (max-width: $bp-large) {
@@ -74,6 +131,7 @@ a {
 
     @media only screen and (max-width: $bp-medium) {
         grid-template-rows: 100vh max-content min-content max-content repeat(4, min-content);
+
     }
 
 }
