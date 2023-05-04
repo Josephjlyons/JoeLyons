@@ -3,6 +3,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faAt, faFile } from '@fortawesome/free-solid-svg-icons';
 import '../../sass/_header.scss';
 
+
 const Header = () => {
     return (
         <div className='header'>
@@ -14,7 +15,7 @@ const Header = () => {
                 <li><a className="header__smoothscroll" href="#contact">Contact</a></li>
             </ul>
             <h1 className='header__h1'>Joe Lyons</h1>
-            <p className='header__text'>A New Hampshire based full stack developer specializing in front end engineering</p>
+            <p className='header__text'>full stack developer specializing in front end engineering</p>
             <div className='header__social-list'>
                 <ul>
 
