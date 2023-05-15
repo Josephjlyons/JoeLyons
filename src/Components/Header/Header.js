@@ -10,9 +10,9 @@ const Header = () => {
             <ul id="nav" className="header__nav">
 
                 <li><a className="header__smoothscroll" href="#about">About</a></li>
-                <li><a className="header__smoothscroll" href="#resume">Resume</a></li>
                 <li><a className="header__smoothscroll" href="#portfolio">Projects</a></li>
                 <li><a className="header__smoothscroll" href="#contact">Contact</a></li>
+                <li><a className="header__smoothscroll" href='https://docs.google.com/document/d/14y2lHTV8S7WNrUancx8AV5NL0C6BFgX0oCL4gwMoIgk/export?format=pdf' aria-label='resume'>Resume</a></li>
             </ul>
             <h1 className='header__h1'>Joe Lyons</h1>
             <p className='header__text'>full stack developer specializing in front end engineering</p>

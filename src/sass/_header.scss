@@ -1,41 +1,31 @@
 @import './base';
 
 .header {
-    grid-column: full-start /center-end;
+    grid-column: 1/ full-end;
     grid-row: 1/1;
-
-    background-image: linear-gradient(rgba(rgb(11, 10, 10), .45), rgba(rgb(2, 2, 2), .4)), url('../../public//images/header-image-4.webp');
+    background-image: linear-gradient(rgba(rgba(255, 68, 68), .2),rgba(rgb(107, 0, 11), .75), rgba(rgb(0, 0, 0), 1)), url('../img/header-image.webp');
     background-size: cover;
     background-position: center;
     height: 100%;
     max-width: 100%;
-    padding: 8rem;
-    padding-top: 4rem;
+    padding: 3rem 8rem 8rem 8rem;
     display: grid;
-
     grid-template-rows: 1fr 15vh minmax(6rem, min-content) 1fr;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
     justify-content: center;
     font-family: $primary-font;
-    font-weight: 300;
-
-    @media only screen and (max-width: $bp-largest) {
-        grid-column: 1/-1;
-    }
 
     &__nav {
         display: flex;
         justify-content: center;
         grid-column: 2/6;
         list-style-type: none;
-
-
-
     }
 
     &__smoothscroll {
-        color: white;
+        color: $primary-font-color;
+        text-decoration: underline;
         padding: 2rem;
         font-size: 2rem;
         font-weight: 500;
@@ -45,17 +35,14 @@
             font-size: 1.75rem;
             font-weight: 500;
         }
-
-
-
     }
 
     &__h1 {
         justify-self: center;
-        color: white;
+        color: $primary-font-color;
         grid-column: 2/6;
         grid-row: 2/2;
-        font-size: 7rem;
+        font-size: 6rem;
         letter-spacing: 5px;
         font-weight: 500;
 
@@ -65,59 +52,58 @@
             text-align: center;
         }
 
-        @media only screen and (max-width: 1170px) {
+
+        @media only screen and (max-width: $bp-medium) {
             font-size: 5rem;
         }
+
 
 
     }
 
     &__text {
-        grid-column: 3/span 2;
+        grid-column: 2/6;
+        width: 70%;
         grid-row: 3/4;
         text-align: center;
         justify-self: center;
         font-size: 1.8rem;
-        color: white;
+        color: $primary-font-color;
         text-transform: capitalize;
-        font-weight: 400;
+        font-weight: 500;
 
         &::after {
             content: '';
             height: 1px;
             display: block;
-            background-color: white;
+            background-color: $primary-font-color;
         }
 
         @media only screen and (max-width: $bp-largest) {
             font-size: 1.6rem;
         }
 
-
-        @media only screen and (max-width: 900px) {
-            font-size: 1.6rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.4rem;
+            width: 100%;
         }
 
         @media only screen and (max-width: $bp-small) {
-            font-size: 1.5rem;
             grid-column: 2/6;
             margin-top: 2rem;
         }
     }
 
     &__social-list {
-
         grid-column: 2/6;
         grid-row: 4/4;
         justify-self: center;
 
-
-        // &::before,
         &::after {
             content: '';
             height: 1px;
             display: block;
-            background-color: white;
+            background-color: $primary-font-color;
         }
 
         li {
@@ -136,18 +122,20 @@
         height: 3.5rem;
         width: 3.5rem;
         z-index: 10;
-        color: white;
+        color: $primary-font-color;
         padding: 2rem;
         justify-content: center;
         animation: .8s ease-in moveInUp backwards;
 
-        &--2{
+        &--2 {
             animation-delay: .2s;
         }
-        &--3{
+
+        &--3 {
             animation-delay: .4s;
         }
-        &--4{
+
+        &--4 {
             animation-delay: .6s;
         }
 
