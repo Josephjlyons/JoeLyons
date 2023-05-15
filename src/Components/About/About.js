@@ -14,10 +14,10 @@ const About = () => {
             <span className='about__bio-text'>
                 <FadeInSections>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem integer vitae justo eget magna.
-                        Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Id leo in vitae turpis massa sed.
-                        Elementum nisi quis eleifend quam adipiscing vitae. Praesent semper feugiat nibh sed pulvinar proin gravida.
-                        Vitae ultricies leo integer malesuada nunc vel risus commodo viverra.
+                        Full Stack Developer with strong teamwork and coordination skills, eye for design and streamlined applications.
+                        Strong drive to see problems out and come up with an effective solution in a timely manner.
+                        Always learning, refining and studying technologies as they advance to keep up to date.
+                        Interested in joining a company to help grow and innovate new products. Graduate of University of New Hampshire with a Certificate in Full Stack Web Development (4.0).
                     </p>
                 </FadeInSections>
             </span>
