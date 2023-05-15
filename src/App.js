@@ -7,7 +7,7 @@ import About from './Components/About/About';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Footer from './Components/Footer/Footer';
 import Certifications from './Components/Certification/Certifications';
-import Skills from './Components/About/Skills';
+
 
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
       <div className='container'>
         <Header/>
         <About />
-        <Skills />
         <Certifications />
         <Portfolio />
         <Footer />
