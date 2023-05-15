@@ -8,8 +8,8 @@
     display: grid;
     grid-template-columns: repeat(6, minmax(16.66%, 1fr));
     grid-template-rows: repeat(6, minmax(0, 1fr));
-    color: whitesmoke;
-    margin: 0 auto;
+    color: $primary-font-color;
+
 
 
     @media only screen and (max-width: $bp-medium) {
@@ -59,7 +59,7 @@
                 height: 1px;
                 display: block;
                 margin-top: 2rem;
-                background-color: whitesmoke;
+                background-color: $primary-font-color;
             }
         }
     }
@@ -80,7 +80,7 @@
     &--icon {
         width: 4.5rem;
         height: 4.5rem;
-        color: whitesmoke;
+        color: $primary-font-color;
 
     }
 

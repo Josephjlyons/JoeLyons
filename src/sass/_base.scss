@@ -3,7 +3,8 @@ $color-primary-dark: #081013;
 
 $primary-font: 'Montserrat', 'sans-serif';
 $secondary-font: 'Open Sans', 'sans-serif';
-$bp-header-text-color: rgb(255, 255, 255);
+$primary-font-color: #f5f5f5;
+
 
 
 //Media query breakpoints
@@ -24,7 +25,7 @@ $bp-mini: 21.86em; // 350px
 @mixin social-icons {
     height: 3.5rem;
     width: 3.5rem;
-    color: white;
+    color: $primary-font-color;
     padding: 2rem;
     justify-content: center;
 }
@@ -97,7 +98,7 @@ html {
 }
 
 body {
-    font-family: white;
+    font-family: $primary-font-color;
     background-color: black;
 
 
@@ -118,6 +119,7 @@ a {
     background-image:
     radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
     radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+    radial-gradient(white, rgba(255,255,255,.5) 1px, transparent 3px),
     radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 1px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
 
