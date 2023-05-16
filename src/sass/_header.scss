@@ -21,9 +21,9 @@
         justify-content: center;
         grid-column: 2/6;
         list-style-type: none;
-    }
+    
 
-    &__smoothscroll {
+    &--item {
         color: $primary-font-color;
         text-decoration: underline;
         padding: 2rem;
@@ -36,6 +36,7 @@
             font-weight: 500;
         }
     }
+}
 
     &__h1 {
         justify-self: center;
