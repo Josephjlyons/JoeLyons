@@ -1,6 +1,6 @@
 import React from "react";
 import '../../sass/_popUp.scss';
-import photo from '../../img/photoMe2.png';
+import photo from '../../img/photoMe2.webp';
 
 const PopUp = ({ open, onClose }) => {
 if (!open) return null;
