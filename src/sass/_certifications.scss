@@ -5,7 +5,7 @@
     grid-column: full-start / center-end;
     grid-row: 3/ 3;
     border-radius: 1rem;
-    border: $primary-font-color .33rem solid;
+    box-shadow: 0px 2px 10px 2px white;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
