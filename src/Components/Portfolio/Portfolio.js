@@ -24,9 +24,9 @@ const Portfolio = () => {
                             <li>image uploading</li>
                             <li>Protected routes</li>
                             <li>Easy to use interface</li>
+                        <a href="https://github.com/Josephjlyons/YelpCamp" aria-label='github'><FontAwesomeIcon className="portfolio__icons" icon={faGithub} /></a>
                         </ul>
 
-                        <a href="https://github.com/Josephjlyons/YelpCamp" aria-label='github'><FontAwesomeIcon className="portfolio__icons" icon={faGithub} /></a>
                     </FadeInDown>
                 </div>
             </figure>
@@ -42,9 +42,9 @@ const Portfolio = () => {
                             <li>Favorite and save breweries</li>
                             <li>View brewery info</li>
                             <li>Map location of brewery</li>
-                        </ul>
                         <a href="https://github.com/Josephjlyons/DraughtPicker" aria-label='github'><FontAwesomeIcon className="portfolio__icons" icon={faGithub} /></a>
                         <a href='https://josephjlyons.github.io/DraughtPicker/' aria-label='website'><FontAwesomeIcon className="portfolio__icons" icon={faGlobe} /></a>
+                        </ul>
                     </FadeInDown>
                 </div>
 
@@ -61,8 +61,8 @@ const Portfolio = () => {
                             <li>generated from DND API </li>
                             <li>view multiple characters</li>
                             <li>Easily swap characters</li>
-                        </ul>
                         <a href="https://github.com/tjvig94/dnd-exp" aria-label='github'><FontAwesomeIcon className="portfolio__icons" icon={faGithub} /></a>
+                        </ul>
                     </FadeInDown>
                 </div>
 
