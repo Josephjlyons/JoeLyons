@@ -16,7 +16,8 @@ const Portfolio = () => {
             <figure className='portfolio__item portfolio__item--1'>
                 <p className='portfolio__header portfolio__header--yelp'>YelpCamp</p>
                 <img className='portfolio__item portfolio__item--yelp' src={yelpCampMain} alt='yelp-camp-main'></img>
-                <div className='portfolio__item--info'>
+                {/* <div className='portfolio__item--info'> */}
+                <div className='portfolio__item portfolio__item--infos'>
                     <FadeInDown>
                         <ul className='portfolio__item--list1'>
                             <li>Secure passport login</li>

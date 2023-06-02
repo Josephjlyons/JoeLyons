@@ -16,11 +16,7 @@ $bp-smaller: 31.25em; // 500px
 $bp-smallest: 25em; // 400px
 $bp-mini: 21.86em; // 350px
 
-@mixin portfolio-hover {
-    transition: .2s;
-    transform: translateY(-.75rem);
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
-}
+
 
 @mixin social-icons {
     height: 3.5rem;
@@ -28,6 +24,14 @@ $bp-mini: 21.86em; // 350px
     color: $primary-font-color;
     padding: 2rem;
     justify-content: center;
+}
+
+@mixin portfolio-container {
+    @media only screen and (max-width: $bp-large) {
+        width: 80%;
+        justify-self: center;
+        margin-bottom: 2rem;
+    }
 }
 
 @mixin portfolio-list {
@@ -39,10 +43,19 @@ $bp-mini: 21.86em; // 350px
     line-height: 5rem;
     overflow: hidden;
 
+    :nth-child(5) {
+        margin-bottom: 4rem;
+    }
+
     @media only screen and (max-width: $bp-largest) {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 3rem;
         // margin-top: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.75rem;
+        margin-top: 3rem;
     }
 
     @media only screen and (min-width: $bp-largest) {
@@ -71,6 +84,20 @@ $bp-mini: 21.86em; // 350px
         transform: translate(0);
     }
 }
+
+@keyframes popoverFade {
+    0% {
+        opacity: 0;
+    }
+
+    // 50%{
+    //     opacity: .5;
+    // }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 
@@ -115,16 +142,16 @@ a {
 .container {
     display: grid;
     grid-template-columns: 8rem [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] 8rem [full-end];
-    grid-template-rows: 100vh 40vh 50vw 50vw repeat(4, min-content);
+    grid-template-rows: 100vh 40vh 50vw  repeat(4,min-content);
     background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
-    radial-gradient(white, rgba(255,255,255,.5) 1px, transparent 3px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 1px);
+        radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 4px),
+        radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 3px),
+        radial-gradient(white, rgba(255, 255, 255, .5) 1px, transparent 3px),
+        radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 1px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
 
     @media only screen and (max-width: $bp-largest) {
-        grid-template-rows: 100vh 40vh min-content 50vw repeat(4, min-content);
+        grid-template-rows: 100vh 50vh min-content 50vw repeat(4, min-content);
     }
 
     @media only screen and (max-width: $bp-large) {
