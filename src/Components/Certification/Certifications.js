@@ -15,7 +15,7 @@ const Certifications = () => {
     return (
 
         <div className='certifications'>
-     
+            <h3>Certifications</h3>
                 <figure className='certifications__item certifications__item--1'>
                     <FadeInSections>
                     <img src={unh}

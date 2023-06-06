@@ -3,19 +3,19 @@
 
 .certifications {
     grid-column: full-start / center-end;
-    grid-row: 3/ 3;
+    grid-row: 3/3;
     border-radius: 1rem;
     box-shadow: 0px 2px 10px 2px white;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
     align-items: center;
     justify-items: center;
 
     @media only screen and (max-width: $bp-medium) {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(4, min-content);
         margin-bottom: 3rem;
     }
 
@@ -24,88 +24,108 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(10, min-content);
         gap: 4rem;
+        box-shadow: none;
 
     }
 
     @media only screen and (min-width: $bp-large) {
-        padding: 8rem;
-        margin-bottom: 3rem;
-        margin-top: 5rem;
+        padding: 3rem;
+        justify-self: center;
+        align-self: center;
+        gap: 1rem;
+        margin-bottom:2rem;
+        margin-top: 6rem;
     }
 
+    h3 {
+        grid-column: 1/-1;
+        grid-row: 1/1;
+        color: $primary-font-color;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 3rem;
+        margin-top: 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1/-1;
+
+        }
+    }
 
     &__item {
 
         &--1 {
             grid-column: 2/2;
-            grid-row: 1/1;
+            grid-row: 2/2
         }
 
         &--2 {
             grid-column: 1/1;
-            grid-row: 1/1;
+            grid-row: 2/2
         }
-      
+
         &--3 {
             grid-column: 3/3;
-            grid-row: 1/1;
+            grid-row: 2/2
         }
 
         &--4 {
             grid-column: 1/1;
-            grid-row: 2/2;
+            grid-row: 3/3;
         }
 
         &--5 {
             grid-column: 2/2;
-            grid-row: 2/2;
+            grid-row: 3/3;
         }
 
         &--6 {
             grid-column: 3/3;
-            grid-row: 2/2;
+            grid-row: 3/3;
         }
 
         &:hover {
             z-index: 100;
             transform: scale(1.1);
             transition: all .5s;
-            
+
         }
 
 
         @media only screen and (max-width: $bp-medium) {
             margin-top: 2rem;
-            box-shadow: 10px 5px 5px rgb(0, 0, 0);
 
             &--2 {
                 grid-column: 1/1;
-                grid-row: 1/1;
+                grid-row: 2/2;
             }
 
             &--1 {
                 grid-column: 2/2;
-                grid-row: 1/1;
+                grid-row: 2/2;
             }
 
             &--3 {
                 grid-column: 1/1;
-                grid-row: 2/2;
+                grid-row: 3/3;
+
             }
 
             &--4 {
                 grid-column: 2/2;
-                grid-row: 2/2;
+                grid-row: 3/3;
+
             }
 
             &--5 {
                 grid-column: 2/2;
-                grid-row: 3/3;
+                grid-row: 4/4;
             }
 
             &--6 {
                 grid-column: 1/1;
-                grid-row: 3/3;
+                grid-row: 4/4;
             }
         }
 
@@ -114,41 +134,40 @@
 
         @media only screen and (max-width: $bp-small) {
             margin-top: 2rem;
-            box-shadow: 2px 1px 5px 5px rgb(0, 0, 0);
 
             &--1 {
                 grid-column: 2/2;
-                grid-row: 1 / 3;
+                grid-row: 2 / 4;
                 z-index: 9;
             }
 
             &--2 {
                 grid-column: 2/2;
-                grid-row: 2/4;
+                grid-row: 3/5;
                 z-index: 10;
             }
 
             &--3 {
                 grid-column: 2/2;
-                grid-row: 3/5;
+                grid-row: 4/6;
                 z-index: 11;
             }
 
             &--4 {
                 grid-column: 2/2;
-                grid-row: 4/6;
+                grid-row: 5/7;
                 z-index: 12;
             }
 
             &--5 {
                 grid-column: 2/2;
-                grid-row: 6/8;
+                grid-row: 7/9;
                 z-index: 14;
             }
 
             &--6 {
                 grid-column: 2/2;
-                grid-row: 5/7;
+                grid-row: 6/8;
                 z-index: 13;
             }
         }
