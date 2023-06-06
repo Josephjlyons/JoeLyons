@@ -16,8 +16,7 @@ const Portfolio = () => {
             <figure className='portfolio__item portfolio__item--1'>
                 <p className='portfolio__header portfolio__header--yelp'>YelpCamp</p>
                 <img className='portfolio__item portfolio__item--yelp' src={yelpCampMain} alt='yelp-camp-main'></img>
-                {/* <div className='portfolio__item--info'> */}
-                <div className='portfolio__item portfolio__item--infos'>
+                <div className='portfolio__item portfolio__item--info1'>
                     <FadeInDown>
                         <ul className='portfolio__item--list1'>
                             <li>Secure passport login</li>
@@ -33,9 +32,9 @@ const Portfolio = () => {
             </figure>
 
             <figure className='portfolio__item portfolio__item--2'>
-                <p className='portfolio__header'>Draught Picker</p>
+                <p className='portfolio__header portfolio__header--draught'>Draught Picker</p>
                 <img className='portfolio__item portfolio__item--draught' src={draughtPickerMain} alt='draught-main'></img>
-                <div className='portfolio__item--info'>
+                <div className='portfolio__item portfolio__item--info2'>
                     <FadeInDown>
                         <ul className='portfolio__item--list2'>
                             <li>OpenBreweryDB API</li>
@@ -52,9 +51,9 @@ const Portfolio = () => {
             </figure>
 
             <figure className='portfolio__item portfolio__item--3'>
-                <p className='portfolio__header'>DnD Creator</p>
+                <p className='portfolio__header portfolio__header--dnd'>DnD Creator</p>
                 <img className='portfolio__item portfolio__item--dnd' src={dndCreatorMain} alt='dnd-main'></img>
-                <div className='portfolio__item--info'>
+                <div className='portfolio__item portfolio__item--info3'>
                     <FadeInDown>
                         <ul className='portfolio__item--list1'>
                             <li>Secure Bcrypt login</li>
