@@ -153,7 +153,7 @@ a {
 .container {
     display: grid;
     grid-template-columns: 8rem [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] 8rem [full-end];
-    grid-template-rows: 100vh 40vh min-content  repeat(4,min-content);
+    grid-template-rows: 100vh 45vh min-content  repeat(4,min-content);
     background-image:
         radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 4px),
         radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 3px),

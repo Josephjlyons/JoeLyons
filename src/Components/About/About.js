@@ -14,10 +14,10 @@ const About = () => {
             <span className='about__bio-text'>
                 <FadeInSections>
                     <p>
-                        Full Stack Developer with strong teamwork and coordination skills, eye for design and streamlined applications.
-                        Strong drive to see problems out and come up with an effective solution in a timely manner.
-                        Always learning, refining and studying technologies as they advance to keep up to date.
-                        Interested in joining a company to help grow and innovate new products. Graduate of University of New Hampshire with a Certificate in Full Stack Web Development (4.0).
+                        I’m Joe Lyons, a down to earth humorous person who enjoys having fun while working but also meeting and exceeding goal expectations.
+                        I’m a Full Stack Developer with strong teamwork and communication skills, flexible and adaptive. Frontend focused, enthusiastic about designing aesthetically pleasing applications.
+                        Interesting in joining a company that builds, innovates and creates products that will bring positive change to the environment and/or technology that benefits people with how they live their lives. Graduate of University of New Hampshire with a Certificate in Full Stack Web Development.
+
                     </p>
                 </FadeInSections>
             </span>
