@@ -28,40 +28,40 @@ $bp-mini: 21.86em; // 350px
 
 @mixin portfolio-container {
     @media only screen and (max-width: $bp-large) {
-        width: 80%;
+        width: 100%;
         justify-self: center;
         margin-bottom: 2rem;
     }
 }
 
-@mixin portfolio-list {
-
+@mixin portfolio-info{
+    text-align: center;
+    color: $primary-font-color;
+    text-transform: capitalize;
     font-family: $secondary-font;
     font-weight: 500;
-    text-transform: capitalize;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     line-height: 5rem;
     overflow: hidden;
 
     :nth-child(5) {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 
     @media only screen and (max-width: $bp-largest) {
         font-size: 1.5rem;
         line-height: 3rem;
-        // margin-top: 4rem;
     }
 
     @media only screen and (max-width: $bp-smaller) {
-        font-size: 1.75rem;
         margin-top: 3rem;
     }
 
     @media only screen and (min-width: $bp-largest) {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        font-weight: 400;
         line-height: 3.5rem;
-        // margin-top: 4rem;
+        
     }
 }
 
@@ -89,16 +89,28 @@ $bp-mini: 21.86em; // 350px
     0% {
         opacity: 0;
     }
-
-    // 50%{
-    //     opacity: .5;
-    // }
     100% {
         opacity: 1;
     }
 }
 
 
+@keyframes pulse-white {
+    0% {
+        border-radius: 100%;
+        box-shadow: 0 0 0 0 white;
+    }
+
+    70% {
+        border-radius: 100%;
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        border-radius: 100%;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
 
 
 *,
@@ -125,10 +137,9 @@ html {
 }
 
 body {
-    font-family: $primary-font-color;
+    color: $primary-font-color;
     background-color: black;
-
-
+    overflow-anchor: none;
     overflow: hidden;
     font-weight: 300;
     line-height: 1.6;
@@ -142,7 +153,7 @@ a {
 .container {
     display: grid;
     grid-template-columns: 8rem [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] 8rem [full-end];
-    grid-template-rows: 100vh 40vh 50vw  repeat(4,min-content);
+    grid-template-rows: 100vh 40vh min-content  repeat(4,min-content);
     background-image:
         radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 4px),
         radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 3px),
@@ -155,7 +166,7 @@ a {
     }
 
     @media only screen and (max-width: $bp-large) {
-        grid-template-rows: 100vh 60vh min-content max-content repeat(4, min-content);
+        grid-template-rows: 100vh 75vh min-content max-content repeat(4, min-content);
     }
 
     @media only screen and (max-width: $bp-medium) {
