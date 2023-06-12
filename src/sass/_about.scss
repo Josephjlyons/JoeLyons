@@ -8,8 +8,6 @@
     display: grid;
     grid-template-columns: repeat(6, minmax(16.66%, 1fr));
     grid-template-rows: repeat(6, minmax(0, 1fr));
-    color: $primary-font-color;
-
 
 
     @media only screen and (max-width: $bp-medium) {
@@ -27,25 +25,20 @@
     }
 
     &__bio-text {
-        grid-column: 1/4;
-        grid-row: 2/-1;
-
-
+        grid-column: 1/-1;
+        grid-row: 1/2;
         font-family: $secondary-font;
         font-weight: 500;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 3.5rem;
         text-align: center;
-
-        @media only screen and (min-width:$bp-largest) {
-            grid-column: 1/4;
-            font-size: 1.6rem;
-            line-height: 4rem;
-            text-align: center;
-        }
-
-        @media only screen and (max-width: $bp-large){
-            line-height: 3rem;
+        padding: 0 5rem 0 5rem;
+        &::after {
+            content: '';
+            height: 1px;
+            margin-top: .5rem;
+            display: block;
+            background-color: $primary-font-color;
         }
 
         @media only screen and (max-width: $bp-medium) {
@@ -53,20 +46,13 @@
             grid-row: 1/1;
             line-height: 4.25rem;
             padding: 4rem;
-
-            &::after {
-                content: '';
-                height: 1px;
-                display: block;
-                margin-top: 2rem;
-                background-color: $primary-font-color;
-            }
+            font-size: 1.6rem;
         }
     }
 
     &__heading {
-        font-size: 1.8rem;
-        font-weight: 400;
+        font-size: 1.6rem;
+        font-weight: 500;
         font-family: $primary-font;
 
         @media only screen and (max-width: $bp-medium) {
@@ -85,14 +71,16 @@
     }
 
     &__skills {
-        grid-column: 4/-1;
-        grid-row: 2/5;
+        grid-column: 1/-1;
+        grid-row: 4/5;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        row-gap: 2rem;
         text-align: center;
+        margin-top: 1rem;
         
-
+    
         &--1 {
             grid-column: 2/2;
             grid-row: 1/1;
@@ -110,31 +98,21 @@
 
         &--4 {
             grid-column: 2/2;
-            grid-row: 3/3;
+            grid-row: 2/2;
         }
 
         &--5 {
             grid-column: 3/3;
-            grid-row: 3/3;
+            grid-row: 2/2;
         }
 
         &--6 {
             grid-column: 4/4;
-            grid-row: 3/3;
+            grid-row: 2/2;
         }
-
-        @media only screen and (min-width: $bp-large){
-            grid-row: 2/7;
-        }
-
-        @media only screen and (max-width: $bp-large) {
-            grid-row: 3/5;
-            margin: -2rem;
-        }
-
+        
         @media only screen and (max-width:$bp-medium) {
             grid-column: 1/-1;
-            margin-bottom: 2rem;
         }
 
         @media only screen and (max-width: $bp-smaller){
