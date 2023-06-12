@@ -3,7 +3,7 @@
 .header {
     grid-column: 1/ full-end;
     grid-row: 1/1;
-    background-image: linear-gradient(rgba(rgba(255, 68, 68), .2),rgba(rgb(107, 0, 11), .75), rgba(rgb(0, 0, 0), 1)), url('../img/header-image.webp');
+    background-image: linear-gradient(to bottom, rgba(255, 68, 68, 0.2), rgba(107, 0, 11, 0.75), rgba(0,0,0, 1)), url('../img/header-image.webp');
     background-size: cover;
     background-position: center;
     height: 100%;
