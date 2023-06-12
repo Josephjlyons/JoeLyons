@@ -3,12 +3,12 @@
 .footer{
     margin-top: 2rem;
     color:$primary-font-color;
-    grid-column: full-start/ center-end;
-    grid-row: 5/5;
+    grid-column: 1/ full-end;
+    grid-row: 8/8;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, min-content);
-
+    border-top: $primary-font-color solid 1px;
 
     .name {
         grid-row:2/2;
