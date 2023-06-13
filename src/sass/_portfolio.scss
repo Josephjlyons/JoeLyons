@@ -1,5 +1,5 @@
-@import './base';
-
+@use 'variables' as *;
+@use 'mixin' as *;
 
 .portfolio {
     grid-column: full-start/ center-end;
@@ -16,7 +16,7 @@
         margin-top: 6rem;
     }
 
-    @media only screen and (max-width:$bp-smaller) {
+    @media only screen and (max-width: $bp-smaller) {
         grid-column: 1/ -1;
         grid-template-columns: repeat(8, 1fr);
         padding: 2rem;
