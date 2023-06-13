@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/JoeLyons/static/css/main.d261d901.css",
+    "main.js": "/JoeLyons/static/js/main.be0f370b.js",
+    "static/js/787.98c40e86.chunk.js": "/JoeLyons/static/js/787.98c40e86.chunk.js",
+    "static/media/header-image.webp": "/JoeLyons/static/media/header-image.fee804d27865d19184b1.webp",
+    "static/media/draught-picker.webp": "/JoeLyons/static/media/draught-picker.526329f9b67b55d92867.webp",
+    "static/media/yelpCamp.webp": "/JoeLyons/static/media/yelpCamp.a7cc21c6b90f882edb11.webp",
+    "static/media/dnd.webp": "/JoeLyons/static/media/dnd.0bb7604a8460cfd1f7fc.webp",
+    "static/media/unh-coding-cert.webp": "/JoeLyons/static/media/unh-coding-cert.194ab6af1384b93df611.webp",
+    "static/media/typescriptCert.webp": "/JoeLyons/static/media/typescriptCert.7214e9ad6ebddea90910.webp",
+    "static/media/photoMe2.webp": "/JoeLyons/static/media/photoMe2.3a85aaeb7d7225543e15.webp",
+    "static/media/reactCert.webp": "/JoeLyons/static/media/reactCert.68e835309f991bef8614.webp",
+    "static/media/advanced-css-sass.webp": "/JoeLyons/static/media/advanced-css-sass.58b74be72857daf3f22e.webp",
+    "static/media/algodataCert.webp": "/JoeLyons/static/media/algodataCert.d170e32923cc90a7c082.webp",
+    "static/media/webdevboot-certSM.webp": "/JoeLyons/static/media/webdevboot-certSM.95a4a6eb0fbaa5570f89.webp",
+    "index.html": "/JoeLyons/index.html",
+    "main.d261d901.css.map": "/JoeLyons/static/css/main.d261d901.css.map",
+    "main.be0f370b.js.map": "/JoeLyons/static/js/main.be0f370b.js.map",
+    "787.98c40e86.chunk.js.map": "/JoeLyons/static/js/787.98c40e86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d261d901.css",
+    "static/js/main.be0f370b.js"
+  ]
+}
