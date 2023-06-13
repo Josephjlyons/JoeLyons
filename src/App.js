@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/style.css';
-import './sass/_base.scss';
+
+// import './sass/_base.scss';
 
 import Header from './Components/Header/Header';
 import About from './Components/About/About';
